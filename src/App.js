@@ -1,23 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import UpdateNode from './Components/UpdateNodes/UpdateNode';
+import FirstTest from './Components/First/FirstTest';
+import Stress from './Components/Stress/Stress';
+import Hidden from './Components/Hidden/Hidden';
+import DragHandle from './Components/DragHandle/DragHandle';
+import AddNodeDemo from './Components/AddNode/AddNode';
+import EdgeFlow from './Components/CustomEdge/EdgeFlow';
+import EdgeButton from './Components/EdgeWithButton/EdgeButton';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <h3>React Flow Demo App</h3>
+     <FirstTest/>
+     <UpdateNode/>
+     <Stress/>
+     <Hidden/>
+     <DragHandle/>
+     <AddNodeDemo/>
+     <EdgeFlow/>
+     <EdgeButton/>
     </div>
   );
 }
